@@ -1,0 +1,345 @@
+# Instincts generated from https://github.com/NGshiyu/homebrew-tap
+# Generated: 2026-06-17T07:58:59.215Z
+# Version: 2.0
+# NOTE: This file supplements (does not replace) any existing curated instincts.
+# High-confidence manually curated instincts should be preserved alongside these.
+
+---
+id: homebrew-tap-commit-length
+trigger: "when writing a commit message"
+confidence: 0.6
+domain: git
+source: repo-analysis
+source_repo: https://github.com/NGshiyu/homebrew-tap
+---
+
+# Homebrew Tap Commit Length
+
+## Action
+
+Write moderate-length commit messages (~66 characters)
+
+## Evidence
+
+- Average commit message length: 66 chars
+- Based on 2 commits
+
+---
+id: homebrew-tap-naming-files
+trigger: "when creating a new file"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/NGshiyu/homebrew-tap
+---
+
+# Homebrew Tap Naming Files
+
+## Action
+
+Use kebab-case naming convention
+
+## Evidence
+
+- Analyzed file naming patterns in repository
+- Dominant pattern: kebab-case
+
+---
+id: homebrew-tap-import-relative
+trigger: "when importing modules"
+confidence: 0.75
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/NGshiyu/homebrew-tap
+---
+
+# Homebrew Tap Import Relative
+
+## Action
+
+Use relative imports for project files
+
+## Evidence
+
+- Import analysis shows relative import pattern
+- Example: import { x } from '../lib/x'
+
+---
+id: homebrew-tap-export-style
+trigger: "when exporting from a module"
+confidence: 0.7
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/NGshiyu/homebrew-tap
+---
+
+# Homebrew Tap Export Style
+
+## Action
+
+Prefer named exports
+
+## Evidence
+
+- Export pattern analysis
+- Dominant style: named
+
+---
+id: homebrew-tap-test-separate
+trigger: "when writing tests"
+confidence: 0.8
+domain: testing
+source: repo-analysis
+source_repo: https://github.com/NGshiyu/homebrew-tap
+---
+
+# Homebrew Tap Test Separate
+
+## Action
+
+Place tests in the tests/ or __tests__/ directory, mirroring src structure
+
+## Evidence
+
+- Separate test directory pattern detected
+- Tests live in dedicated test folders
+
+---
+id: homebrew-tap-workflow-ci-workflow-addition-and-cask-update
+trigger: "when doing ci workflow addition and cask update"
+confidence: 0.55
+domain: workflow
+source: repo-analysis
+source_repo: https://github.com/NGshiyu/homebrew-tap
+---
+
+# Homebrew Tap Workflow Ci Workflow Addition And Cask Update
+
+## Action
+
+Follow the ci-workflow-addition-and-cask-update workflow:
+1. Modify or add workflow YAML files under .github/workflows/ (e.g., validate-cask.yml, update-cask.yml)
+2. Edit or update a Cask formula file under Casks/ (e.g., keyden.rb)
+3. Commit changes together to ensure CI and formula are in sync
+
+## Evidence
+
+- Workflow detected from commit patterns
+- Frequency: ~1x per month
+- Files: .github/workflows/validate-cask.yml, .github/workflows/update-cask.yml, Casks/*.rb
+
+---
+id: homebrew-tap-instinct-file-naming
+trigger: "When creating or renaming a file in the repository"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: NGshiyu/homebrew-tap
+---
+
+# Homebrew Tap Instinct File Naming
+
+## Action
+
+Use kebab-case for file names (e.g., my-formula.rb)
+
+## Evidence
+
+- Pattern in Casks/*.rb
+- Naming conventions in analysis
+
+---
+id: homebrew-tap-instinct-function-naming
+trigger: "When defining a function in Ruby code"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: NGshiyu/homebrew-tap
+---
+
+# Homebrew Tap Instinct Function Naming
+
+## Action
+
+Use camelCase for function names
+
+## Evidence
+
+- Naming conventions in analysis
+- Pattern in Casks/*.rb
+
+---
+id: homebrew-tap-instinct-class-naming
+trigger: "When defining a class in Ruby code"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: NGshiyu/homebrew-tap
+---
+
+# Homebrew Tap Instinct Class Naming
+
+## Action
+
+Use PascalCase for class names
+
+## Evidence
+
+- Naming conventions in analysis
+- Pattern in Casks/*.rb
+
+---
+id: homebrew-tap-instinct-constant-naming
+trigger: "When defining a constant in Ruby code"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: NGshiyu/homebrew-tap
+---
+
+# Homebrew Tap Instinct Constant Naming
+
+## Action
+
+Use SCREAMING_SNAKE_CASE for constant names
+
+## Evidence
+
+- Naming conventions in analysis
+- Pattern in Casks/*.rb
+
+---
+id: homebrew-tap-instinct-import-style
+trigger: "When importing modules in Ruby code"
+confidence: 0.7
+domain: code-style
+source: repo-analysis
+source_repo: NGshiyu/homebrew-tap
+---
+
+# Homebrew Tap Instinct Import Style
+
+## Action
+
+Use relative import paths
+
+## Evidence
+
+- ImportStyle: relative in analysis
+
+---
+id: homebrew-tap-instinct-export-style
+trigger: "When exporting modules or classes in Ruby code"
+confidence: 0.7
+domain: code-style
+source: repo-analysis
+source_repo: NGshiyu/homebrew-tap
+---
+
+# Homebrew Tap Instinct Export Style
+
+## Action
+
+Use named exports
+
+## Evidence
+
+- ExportStyle: named in analysis
+
+---
+id: homebrew-tap-instinct-test-location
+trigger: "When adding or updating tests for a Cask formula"
+confidence: 0.7
+domain: testing
+source: repo-analysis
+source_repo: NGshiyu/homebrew-tap
+---
+
+# Homebrew Tap Instinct Test Location
+
+## Action
+
+Place test files in a separate location from source files
+
+## Evidence
+
+- testLocation: separate in architecture analysis
+
+---
+id: homebrew-tap-instinct-commit-prefix-fix
+trigger: "When making a commit that fixes a bug or issue"
+confidence: 0.9
+domain: git
+source: repo-analysis
+source_repo: NGshiyu/homebrew-tap
+---
+
+# Homebrew Tap Instinct Commit Prefix Fix
+
+## Action
+
+Prefix the commit message with 'fix:'
+
+## Evidence
+
+- Seen in commit: fix: deprecated depends_on format & add CI validation workflows
+
+---
+id: homebrew-tap-instinct-commit-length
+trigger: "When writing a commit message"
+confidence: 0.6
+domain: git
+source: repo-analysis
+source_repo: NGshiyu/homebrew-tap
+---
+
+# Homebrew Tap Instinct Commit Length
+
+## Action
+
+Keep the commit message concise, around 66 characters on average
+
+## Evidence
+
+- averageLength: 66 in commit analysis
+
+---
+id: homebrew-tap-instinct-merge-pr
+trigger: "When merging a pull request"
+confidence: 0.8
+domain: git
+source: repo-analysis
+source_repo: NGshiyu/homebrew-tap
+---
+
+# Homebrew Tap Instinct Merge Pr
+
+## Action
+
+Use the format: 'Merge pull request #[number] from [branch]'
+
+## Evidence
+
+- Seen in commit: Merge pull request #1 from NGshiyu/fix/depends-on-deprecation-and-ci
+
+---
+id: homebrew-tap-instinct-ci-cask-workflow
+trigger: "When introducing or updating CI workflows for Cask validation and updates, especially when changing Cask formula requirements"
+confidence: 0.9
+domain: workflow
+source: repo-analysis
+source_repo: NGshiyu/homebrew-tap
+---
+
+# Homebrew Tap Instinct Ci Cask Workflow
+
+## Action
+
+Modify or add workflow YAML files under .github/workflows/ (e.g., validate-cask.yml, update-cask.yml), update the relevant Cask formula file under Casks/, and commit changes together to ensure CI and formula are in sync
+
+## Evidence
+
+- Workflow: ci-workflow-addition-and-cask-update
+- Files: .github/workflows/validate-cask.yml, .github/workflows/update-cask.yml, Casks/*.rb
+- Commit: fix: deprecated depends_on format & add CI validation workflows
+
